@@ -1,5 +1,6 @@
 package com.atguigu.gulimall.product;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
@@ -11,11 +12,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *             <version>3.3.1</version>
  *         </dependency>
  *    2）配置
- *      1.配置数据
+ *      1.配置数据源
+ *          1)导入数据驱动
+ *          2）
+ *      2.配置MyBatis-Plus
  *
  */
-/
 
+@MapperScan("com.atguigu.gulimall.product.dao")
 @SpringBootApplication
 public class GulimallProductApplication {
 
